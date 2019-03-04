@@ -17,5 +17,6 @@ The material:
   * *01EstimationERassociation.R*, *02ProjExpHOutSeries.R*, *03DownscalingCalibration.R*, *04_05_06ExtCurveProjUncert.R*, and *07DemChangesAdapt.R*  performs the various steps, consistently with the sections in the published article
   * *fhempel.r* is an additional R function to perform the calibration step
   * *lndn_obs.csv*, *lndn_rcp4p5.csv*, and *lndn_rcp8p5.csv* store the projection temperature data
+  * *Codebook* is a pdf file with the codebook for the datasets above (detailed explanation of all the variables)
   
 Download as a ZIP file using the green button *Clone or download* above
