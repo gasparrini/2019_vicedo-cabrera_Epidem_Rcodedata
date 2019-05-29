@@ -9,7 +9,7 @@
 # This code reproduces the analysis described in the tutorial.
 # R Code and data released under GNU General Public License (version 3).
 #
-# Update: 02 March 2019
+# Update: 29 May 2019
 # * an updated version of this code, compatible with future versions of the
 #   software, is available at:
 #   https://github.com/gasparrini/2019_vicedo-cabrera_Epidem_Rcodedata
@@ -146,7 +146,7 @@ plot(pred,"overall",col="red",ylim=c(0.5,2.5),axes=T,lab=c(6,5,7),xlab=xlab,
 
 lines(pred$predvar,pred$allRRfit,col=2,lwd=2)
 # PLOT LINE OF THE MODIFIED CURVE (30% REDUCTION OF HEAT) 
-lines(pred$predvar[ind],exp(pred$allfit[ind]/1.7),col=2,lwd=2,lty=2)
+lines(pred$predvar[ind],exp(pred$allfit[ind]*0.7),col=2,lwd=2,lty=2)
 legend(8,2.4,c("No adaptation","With adaptation"),lty=1:2,inset=0.005,
   cex=0.9,bty="n",col=2)
 text(12,2.5, "Reduction in heat risk", cex=1)
