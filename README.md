@@ -8,7 +8,7 @@ scenarios based on a defined set of assumptions and advanced statistical techniq
 developed in time-series analysis in environmental epidemiology. The proposed
 methodology is illustrated through a step-by-step hands-on tutorial structured in well defined sections that cover the main methodological steps and essential elements:
 
-Vicedo-Cabrera AM, Sera F, Armstrong B, Gasparrini A. A hands-on tutorial on a modelling framework for projections of climate change impacts on health. *Epidemiology*. 2019; DOI:10.1097/EDE.0000000000000982. [[freely available here](http://www.ag-myresearch.com/2019_vicedo-cabrera_Epidem.html)]
+Vicedo-Cabrera AM, Sera F, Armstrong B, Gasparrini A. A hands-on tutorial on a modelling framework for projections of climate change impacts on health. *Epidemiology*. 2019;**30**(3):321-329. [[freely available here](http://www.ag-myresearch.com/2019_vicedo-cabrera_Epidem.html)]
 
 --------------------------------------------------------------------------------
 
