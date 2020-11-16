@@ -23,7 +23,7 @@
 ################################################################################
 
 # LOAD THE PACKAGES
-library(dlnm) ; library(splines) ; library(MASS)
+library(dlnm) ; library(splines) ; library(MASS) ; library(tsModel)
 
 ################################################################################
 # 01 ESTIMATION OF THE EXPOSURE-RESPONSE ASSOCIATIONS
@@ -39,7 +39,8 @@ library(dlnm) ; library(splines) ; library(MASS)
 #  NB: file "lndn_obs.csv" provided as downloadable supplemental material  
 #      along this code. Description of the variables available in 
 #     "VarDescr_lndn_obs.csv".
-obs <- read.csv("lndn_obs.csv",colClasses=c(date="Date"))
+obs <- read.csv("lndn_obs.csv")
+obs$date <- as.Date(obs$date, format="%d/%m/%Y")
 
 # DEFINITION OF THE CROSS-BASIS FOR TEMPERATURE
 # - SPECIFICATION PARAMETERS OF THE EXPOSURE-RESPONSE DIMENSION OF THE CROSS-BASIS
