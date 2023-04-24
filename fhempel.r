@@ -11,7 +11,7 @@
 #   - output: RETURN THE SERIES ("series") OR THE PARAMETERS ("correction")
 #
 # Author: Antonio Gasparrini - GNU General Public License (version 3)
-# Update: 02 August 2022
+# Update: 24 April 2023
 ################################################################################
 
 fhempel <- function(obs ,mod, add=TRUE, mult=TRUE, output="series") {
@@ -29,7 +29,7 @@ fhempel <- function(obs ,mod, add=TRUE, mult=TRUE, output="series") {
   out <- lapply(seq(ncol(mod)-1),function(j) {
 #    
     # IDENTIFY PERIOD WITH NO MISSING
-    ind <- intersect(obs[[1]],mod[[1]])
+    ind <- obs[[1]][obs[[1]] %in% mod[[1]]]
     notna <- complete.cases(obs[obs[[1]]%in%ind,2],mod[mod[[1]]%in%ind,j+1])
     indobs <- seq(nrow(obs))[obs[[1]]%in%ind][notna]
     indmod <- seq(nrow(mod))[mod[[1]]%in%ind][notna]

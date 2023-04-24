@@ -9,7 +9,6 @@
 # This code reproduces the analysis described in the tutorial.
 # R Code and data released under GNU General Public License (version 3).
 #
-# Update: 29 May 2019
 # * an updated version of this code, compatible with future versions of the
 #   software, is available at:
 #   https://github.com/gasparrini/2019_vicedo-cabrera_Epidem_Rcodedata
